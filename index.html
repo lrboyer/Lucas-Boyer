@@ -5,82 +5,108 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width", intial-scale="1.0" />
         <title>Document</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
-    <body id="Top">
-        <header>
-            <a href="#Top"> Lucas Boyer</a>
+    <body id="top">
+        <header class="fixed w-full bg-red-800 text-white md:flex md:justify-between">
+            <a class="font-bold block px-8 py-4 hover:bg-red-700" href="#top" > Lucas Boyer</a>
             <nav>
-                <ul>
+                <ul class="md:flex">
                     <li> 
-                        <a href="#Hero">Hero</a>
+                        <a class="block px-8 py-4 hover:bg-red-700" href="#hero">Hero</a>
                     </li>
                     <li> 
-                        <a href="#About">About</a>
+                        <a class="block px-8 py-4 hover:bg-red-700" href="#about">About</a>
                     </li>
                     <li> 
-                        <a href="Tech Support">Tech Support</a>
+                        <a class="block px-8 py-4 hover:bg-red-700" href="#techSupport">Tech Support</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="Hero">
-                <p>It's Jake from</p>
-                <h1>State Farm</h1>
-                <p>Communication - Human centered computing</p> 
+            <section id="hero" class="h-screen bg-red-600 text-white text-center grid place-items-center">
+                <div>
+                    <p class="text-lg font-bold italic uppercase tracking-wider">It's Jake from</p>
+                    <h1 class="font-bold text-8xl leeding-none">State Farm</h1>
+                    <p class="font-mono text-lg">Communication - Human centered computing</p> 
+                    <a
+                        href="https://www.linkedin.com/in/lucas-boyer-342b40205"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        class="mt-10 bg-white rounded-lg px-8 py-4 text-black inline-block"
+                    >Connect</a>
+                </div>
             </section>
 
-            <section id="About">
-                <h2>About</h2>
-                <ul>
-                    <li>
-                        <img src=""/>
-                        <h3>Design</h3>
-                        <p>I love designing especially</p>
+            <section id="about" class="bg-gray-100 pt-10">
+                <h2 class="text-center text-xl font-bold text-gray-900">About</h2>
+                <ul class="grid p-10 gap-10 md:grid-cols-3">
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="workout.jpg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="font-bold">Working Out</h3>
+                            <p>I love to workout</p>
+                        </div>
                     </li>
                     
-                    <li>
-                        <img />
-                        <h3>Programming</h3>
-                        <p>I love programming stuff</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img class="w-full" />
+                        <div class="p-4">
+                            <h3>Programming</h3>
+                            <p>I love programming stuff</p>
+                        </div>
                     </li>
                     
-                    <li>
-                        <img src="gaming.jpg" width="500"/>
-                        <h3>Gaming</h3>
-                        <p>I love gaming</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="gaming.jpg" class="w-full"/>
+                        <div class="p-4">
+                            <h3>Gaming</h3>
+                            <p>I love gaming</p>
+                        </div>
                     </li>
 
                 </ul>
             </section>
 
-            <section id="Tech Support"> 
-                <h2> Tech Support </h2>
-                <ul>
-                    <li>
-                        <img />
-                        <h3>Lucas Boyer</h3>
-                        <h3>Lexington SC </h3>
-                    </li>
-
-                    <li>
-                        <img />
-                        <h3>Chan Boyer</h3>
-                        <h3>Lexington SC </h3>
-                    </li>
-
-                    <li>
-                        <img />
-                        <h3>Tommy</h3>
-                        <h3>Lexington SC </h3>
-                    </li>
-                </ul>
+            <section id="techSupport" class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="md:flex md:flex-wrap md:-m-4 grid grid-cols-3">
+                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center">
+                    <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/302x302">
+                    <br />
+                    <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">Lucas Boyer</h2>
+                    <p class="text-gray-500">Lexington, SC</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center">
+                    <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/300x300">
+                    <br />
+                    <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">Matison Boyer</h2>
+                    <p class="text-gray-500">Lexington, SC</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 lg:mb-0 p-4">
+                    <div class="h-full text-center">
+                    <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/305x305">
+                    <br />
+                    <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">Tommy Cat</h2>
+                    <p class="text-gray-500">Lexington, SC</p>
+                    </div>
+                </div>
+                </div>
+            </div>
             </section>
 
         </main>
 
-        <footer> 
+        <footer class="text-white bg-gray-800 p-10 italic text-center"> 
             © 2021 Lucas Boyer. All rights reserved.
         </footer>
 
